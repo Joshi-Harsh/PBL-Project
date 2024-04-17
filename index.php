@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -20,62 +20,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
-  <body>
-    <!--Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
-      <div class="container mw-2000">
-        <div>
-          <a
-            class="navbar-brand d-flex justify-content-center align-items-center"
-            href="#">
-            <i class="material-symbols-outlined me-2 globe logo-color">
-              language
-            </i>
-            <h3
-              class="mt-2 logo-color"
-              style="font-family: Arial, Helvetica, sans-serif">
-              FinTech
-            </h3>
-          </a>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#hero">Home</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#reviews">Review</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#team">Team</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-          </ul>
-          <button class="btn login-btn ms-lg-3" id="form-open">Login</button>
-        </div>
-      </div>
-    </nav>
+<body>
+<?php include 'header.php';?>
+
     <section class="home">
       <div class="slider-background">
         <svg
@@ -6308,104 +6255,7 @@
           </g>
         </svg>
       </div>
-
-      
-      <div class="form_container">
-        <div class="form login_form">
-          <section class="user">
-            <div class="user_options-container">
-              <div class="user_options-text">
-                <i class="material-symbols-outlined form_close"> close </i>
-                <div class="user_options-unregistered">
-                  <h2 class="user_unregistered-title text-white">
-                    Don't have an account?
-                  </h2>
-                  <button class="user_unregistered-signup" id="signup-button">
-                    Sign up
-                  </button>
-                </div>
-
-                <div class="user_options-registered">
-                  <h2 class="user_registered-title text-white">
-                    Have an account?
-                  </h2>
-                  <button class="user_registered-login" id="login-button">
-                    Login
-                  </button>
-                </div>
-              </div>
-
-              <div class="user_options-forms" id="user_options-forms">
-                <div class="user_forms-login">
-                  <h2 class="forms_title">Login</h2>
-                  <form class="forms_form">
-                    <fieldset class="forms_fieldset">
-                      <div class="forms_field">
-                        <input
-                          type="email"
-                          placeholder="Email"
-                          class="forms_field-input"
-                          required
-                          autofocus />
-                      </div>
-                      <div class="forms_field">
-                        <input
-                          type="password"
-                          placeholder="Password"
-                          class="forms_field-input"
-                          required />
-                      </div>
-                    </fieldset>
-                    <div class="forms_buttons">
-                      <button type="button" class="forms_buttons-forgot">
-                        Forgot password?
-                      </button>
-                      <input
-                        type="submit"
-                        value="Log In"
-                        class="forms_buttons-action" />
-                    </div>
-                  </form>
-                </div>
-                <div class="user_forms-signup">
-                  <h2 class="forms_title">Sign Up</h2>
-                  <form class="forms_form">
-                    <fieldset class="forms_fieldset">
-                      <div class="forms_field">
-                        <input
-                          type="text"
-                          placeholder="Full Name"
-                          class="forms_field-input"
-                          required />
-                      </div>
-                      <div class="forms_field">
-                        <input
-                          type="email"
-                          placeholder="Email"
-                          class="forms_field-input"
-                          required />
-                      </div>
-                      <div class="forms_field">
-                        <input
-                          type="password"
-                          placeholder="Password"
-                          class="forms_field-input"
-                          required />
-                      </div>
-                    </fieldset>
-                    <div class="forms_buttons">
-                      <input
-                        type="submit"
-                        value="Sign up"
-                        class="forms_buttons-action" />
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
+     
     </section>
     <!-- HERO -->
     <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
@@ -6669,17 +6519,14 @@
     </section>
 
     <!-- FOOTER -->
-    <object
-      type="text/html"
-      data="footer.html"
-      style="width: 100%"
-      height="475px"></object>
+    <?php include 'footer.php';?>
 
-    <script
+      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
-  </body>
+   
+</body>
 </html>
