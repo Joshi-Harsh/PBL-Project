@@ -1,11 +1,10 @@
 <?php
-  $ firstName = $_POST['firstName'];
-  $ lastName = $_POST['lastName'];
-  $ email = $_POST['email'];
-  $ subject = $_POST['subject'];
-  $ message = $_POST['message'];
-
-  // Database Conncection
-
-    
+$host="localhost";
+$user="root";
+$pass="";
+$db="login";
+$conn=new mysqli($host,$user,$pass,$db);
+if($conn->connect_error){
+    echo "Failed to connect DB".$conn->connect_error;
+}
 ?>
